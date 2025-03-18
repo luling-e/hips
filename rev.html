@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="서구청 하이성형외과">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://cjstkskfro54.dothome.co.kr/hg/">
+    <meta property="og:image" content="images/h_logo.jpg">
+    <meta property="og:description" content="인천 서구 서구청하이성형외과">
+    <meta property="og:keywords" content="성형외과, 하이성형외과, 서구청성형외과, 인천성형외과">
+    <title>하이성형외과</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rosarivo:ital@0;1&family=Song+Myung&family=Train+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-kopub@1.0">
+    <link rel="stylesheet" href="css/xeicon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="ev">
+            <div class="wrap">
+                <h1><a href="index.html"><img src="images/logo.png" alt="하이 성형외과"></a></h1>
+                <div>
+                    <span>hg event</span>
+                    <p>당신의 <strong>아름다움을 끌어</strong>올리다.</p>
+                    <span>hg event</span>
+                </div>
+                <a href="#">이벤트 확인하기<i class="xi-angle-right"></i></a>
+            </div>
+        </div>
+        <nav class="mn">
+            <div class="wrap">
+                <button><i class="xi-bars"></i></button>
+                <ul class="gnb">
+                    <li><a href="hiit.html">하이소개</a></li>
+                    <li><a href="rev.html">상담</a></li>
+                    <li><a href="#">눈</a></li>
+                    <li><a href="#">코</a></li>
+                    <li><a href="#">바디</a></li>
+                    <li><a href="#">윤곽</a></li>
+                    <li><a href="#">쁘띠</a></li>
+                    <li><a href="#">피부</a></li>
+                    <li><a href="#">review</a></li>
+                    <li><a href="noc.html">community</a></li>
+                    <li><a href="#">event</a></li>
+                </ul>
+                <ul class="snb">
+                    <li><a href="#">language<i class="xi-angle-down-min"></i></a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="revmain">
+        <h2 class="blind">온라인상담 메인 영역</h2>
+        <div class="bg">
+            <div class="wrapsub fl">
+                <div>
+                    <p>HIGH PLASTIC SUGERY</p>
+                    <h3>온라인상담</h3>
+                    <div></div>
+                    <p>하이성형외과에서 빠르고 정확하게 상담해드리겠습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="revform">
+        <h2 class="blind">온라인상담 상담폼 영역</h2>
+        <div class="wrapsub">
+            <h3>온라인상담</h3>
+            <ul>
+                <li class="select"><a href="#">온라인 상담하기</a></li>
+                <li><a href="#">상담내역 / 상담관리</a></li>
+            </ul>
+            <form>
+                <table>
+                    <tr>
+                        <td>분류<img src="images/revstar.png" alt="필수입력"></td>
+                        <td>
+                            <select>
+                                <option value="none">분류를 선택하세요</option>
+                                <option value="눈">눈성형</option>
+                                <option value="코">코성형</option>
+                                <option value="바디">바디성형</option>
+                                <option value="윤곽">윤곽성형</option>
+                                <option value="쁘띠">쁘띠성형</option>
+                                <option value="피부">피부시술</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>이름<img src="images/revstar.png" alt="필수입력"></td>
+                        <td>
+                            <input type="text" id="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호<img src="images/revstar.png" alt="필수입력"></td>
+                        <td>
+                            <input type="password" id="password" onkeyup="chkCharCode(event)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>이메일</td>
+                        <td>
+                            <input type="email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>핸드폰 번호</td>
+                        <td>
+                            <input type="text" id="PhoneNumber" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>제목<img src="images/revstar.png" alt="필수입력"></td>
+                        <td>
+                            <input type="text" id="title">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>내용<img src="images/revstar.png" alt="필수입력"></td>
+                        <td>
+                            <input type="text" id="content">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>자동등록방지</td>
+                        <td class="fl">
+                            <div></div>
+                            <input type="text" id="ParNumber" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                            <button><i class="xi-volume-up"></i></button><button><i class="xi-renew"></i></button>
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <input type="submit" id="RevCmp" value="작성완료">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <h2 class="blind">웹사이트 정보</h2>
+        <div class="bg">
+            <div class="wrap">
+                <p>∙ 수술 후 출혈, 감염, 염증 등의 합병증이 있을 수 있으며 주관적인 만족도는 개인마다 차이가 있을 수 있습니다. <span>(해당 사이트는 포트폴리오용 사이트이며 모든 내용은 실제가 아닙니다.)</span></p> 
+                <address>
+                    ∙ 주소 : 인천 서구 서곶로 284 4층, 5층 하이성형외과<br>
+                    ∙ 상호명 : 하이성형외과의원<br>
+                    ∙ 대표자 : 전원주<br>
+                    ∙ 사업자등록번호 : 431-17-00707<br>
+                    <br>
+                    COPYRIGHTⓒ2020 HIGH PLASTIC SURGERY. ALL RIGHT RESERVED.
+                </address>
+                <ul>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">비급여진료비용</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 퀵메뉴 -->
+    <div class="quik">
+        <ul>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="xi-youtube-play"></i><br>
+                        유튜브
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="rev.html">
+                    <div>
+                        <i class="xi-users"></i><br>
+                        온라인상담
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="xi-calendar"></i><br>
+                        진료예약
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="xi-image-o"></i><br>
+                        전후사진
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="xi-paper-o"></i><br>
+                        수술후기
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:window.scrollTo(0,0);">
+                    <div>
+                        <i class="xi-caret-up-min"></i><br>
+                        TOP
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>    
+</body>
+</html>
